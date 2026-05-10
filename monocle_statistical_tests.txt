@@ -1,0 +1,259 @@
+Wilcoxon Test: Pseudotime by Dataset
+
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  pseudotime by Dataset
+W = 25437972, p-value = 3.513e-12
+alternative hypothesis: true location shift is not equal to 0
+
+
+
+Chi-square Test: Cell Type by Dataset
+
+
+	Pearson's Chi-squared test
+
+data:  celltype_table
+X-squared = 2302.7, df = 17, p-value < 2.2e-16
+
+
+
+Chi-square Test: Cluster by Dataset
+
+
+	Pearson's Chi-squared test
+
+data:  cluster_table
+X-squared = 7501.9, df = 15, p-value < 2.2e-16
+
+
+
+Summary Table
+
+                                  Test
+1               Wilcoxon rank-sum test
+2 Chi-square test: cell type occupancy
+3   Chi-square test: cluster occupancy
+                                                         Purpose
+1       Compare pseudotime distributions between WT and KO cells
+2 Test whether WT and KO differ in annotated cell-type occupancy
+3      Test whether WT and KO differ in Seurat cluster occupancy
+                                                                                                 Justification
+1 Wilcoxon test was used because pseudotime is continuous, non-normal, and often skewed in trajectory analyses
+2        Chi-square test was used because cell-type occupancy is categorical count data across genotype groups
+3          Chi-square test was used because cluster occupancy is categorical count data across genotype groups
+            Statistic Degrees_of_freedom      P_value
+1      W = 25437972.5                 NA 3.513111e-12
+2 X-squared = 2302.66                 17 0.000000e+00
+3 X-squared = 7501.88                 15 0.000000e+00
+                                                                                            Interpretation
+1                      Tests whether WT and KO cells differ in their overall relative pseudotime positions
+2 Tests whether WT and KO cells are distributed differently across author-annotated differentiation states
+3            Tests whether WT and KO cells are distributed differently across unsupervised Seurat clusters
+
+
+Top 100 Trajectory-Associated Genes
+
+         status p_value morans_test_statistic   morans_I gene_short_name
+Mrpl15       OK       0              77.90751 0.18903664          Mrpl15
+Tcea1        OK       0              40.62439 0.09854325           Tcea1
+Rrs1         OK       0              86.31428 0.20945175            Rrs1
+Sgk3         OK       0              88.26903 0.21419503            Sgk3
+Snhg6        OK       0              38.90153 0.09436191           Snhg6
+Ppp1r42      OK       0             146.06895 0.35270332         Ppp1r42
+Cops5        OK       0              51.36436 0.12461062           Cops5
+Tram1        OK       0              73.04218 0.17722972           Tram1
+Terf1        OK       0              52.05568 0.12629222           Terf1
+Rpl7         OK       0             226.59545 0.54867661            Rpl7
+Ube2w        OK       0              62.94490 0.15272513           Ube2w
+Eloc         OK       0              81.92777 0.19878930            Eloc
+Tmem70       OK       0              38.36837 0.09306868          Tmem70
+Mcm3         OK       0             154.27704 0.37441449            Mcm3
+Ogfrl1       OK       0              70.54630 0.17117424          Ogfrl1
+Smap1        OK       0              42.82578 0.10388645           Smap1
+Ptp4a1       OK       0              41.92410 0.10169999          Ptp4a1
+Prim2        OK       0              78.55523 0.19061630           Prim2
+Bag2         OK       0              96.53323 0.23425534            Bag2
+Imp4         OK       0              52.83068 0.12817325            Imp4
+Ptpn18       OK       0             199.70879 0.48462147          Ptpn18
+Hs6st1       OK       0              56.54246 0.13716685          Hs6st1
+Uggt1        OK       0              39.23942 0.09518269           Uggt1
+Neurl3       OK       0              42.39870 0.10284284          Neurl3
+Arid5a       OK       0              84.85330 0.20588210          Arid5a
+Cox5b        OK       0             145.78392 0.35366436           Cox5b
+Mrpl30       OK       0              85.72410 0.20800088          Mrpl30
+Eif5b        OK       0              90.58547 0.21978793           Eif5b
+Aff3         OK       0              69.56109 0.16877838            Aff3
+Rpl31        OK       0             197.28590 0.47838982           Rpl31
+Map4k4       OK       0              75.47115 0.18313076          Map4k4
+Il1r2        OK       0              92.46983 0.22250707           Il1r2
+Il1rl1       OK       0             138.10943 0.33516593          Il1rl1
+Il18rap      OK       0              65.84871 0.15959924         Il18rap
+Mrps9        OK       0              46.15719 0.11197429           Mrps9
+Fhl2         OK       0              87.86027 0.21314557            Fhl2
+Tex30        OK       0              81.12450 0.19685469           Tex30
+Col3a1       OK       0              48.18089 0.10060528          Col3a1
+Wdr75        OK       0              40.77134 0.09890170           Wdr75
+Slc40a1      OK       0             125.99902 0.30575373         Slc40a1
+Cavin2       OK       0             289.36991 0.70227971          Cavin2
+Asnsd1       OK       0              52.23483 0.12672852          Asnsd1
+Stk17b       OK       0              61.36897 0.14889146          Stk17b
+Pgap1        OK       0              48.13056 0.11488608           Pgap1
+Ankrd44      OK       0              54.63401 0.13254829         Ankrd44
+Hspd1        OK       0             176.58621 0.42848956           Hspd1
+Hspe1        OK       0             197.75459 0.47978882           Hspe1
+Sgo2a        OK       0             161.22474 0.39126404           Sgo2a
+Bzw1         OK       0              71.10066 0.17249257            Bzw1
+Ppil3        OK       0              41.42343 0.10048442           Ppil3
+Orc2         OK       0              72.11702 0.17499075            Orc2
+Ndufb3       OK       0              83.58627 0.20280501          Ndufb3
+Casp8        OK       0              54.55713 0.13236487           Casp8
+Gm973        OK       0              79.11493 0.19128040           Gm973
+Sumo1        OK       0              84.16410 0.20419931           Sumo1
+Nop58        OK       0             109.63043 0.26602076           Nop58
+Wdr12        OK       0              83.02387 0.20145640           Wdr12
+Raph1        OK       0              45.55809 0.11048473           Raph1
+Pard3b       OK       0              78.13699 0.18957397          Pard3b
+Gm20342      OK       0              92.03018 0.22332805         Gm20342
+Ndufs1       OK       0              40.45810 0.09814125          Ndufs1
+Eef1b2       OK       0             224.95612 0.54513044          Eef1b2
+Adam23       OK       0              41.59923 0.09375554          Adam23
+Fastkd2      OK       0              39.48576 0.09577684         Fastkd2
+Klf7         OK       0              69.79177 0.16933147            Klf7
+Idh1         OK       0             106.83098 0.25925210            Idh1
+Acadl        OK       0              60.06013 0.14572245           Acadl
+Ikzf2        OK       0             143.82145 0.34904337           Ikzf2
+Bard1        OK       0              82.25016 0.19956690           Bard1
+Atic         OK       0              78.03239 0.18934531            Atic
+Fn1          OK       0             167.04342 0.40417168             Fn1
+Pecr         OK       0              41.72663 0.10121557            Pecr
+Xrcc5        OK       0              77.40080 0.18780207           Xrcc5
+Rpl37a       OK       0             234.85548 0.56878060          Rpl37a
+Igfbp5       OK       0              42.92400 0.09285262          Igfbp5
+Tns1         OK       0              66.33319 0.16094855            Tns1
+Cxcr2        OK       0             122.31794 0.29678504           Cxcr2
+Arpc2        OK       0             136.09326 0.33010397           Arpc2
+Aamp         OK       0              43.51431 0.10555427            Aamp
+Slc11a1      OK       0             122.00231 0.29406299         Slc11a1
+Cnot9        OK       0              48.53465 0.11774538           Cnot9
+Abcb6        OK       0              50.86042 0.12336923           Abcb6
+Stk16        OK       0              46.68904 0.11326010           Stk16
+Tuba4a       OK       0             125.31579 0.30409103          Tuba4a
+Farsb        OK       0              54.58313 0.13242896           Farsb
+Wdfy1        OK       0              52.63816 0.12770702           Wdfy1
+Mrpl44       OK       0              43.56918 0.10569338          Mrpl44
+Serpine2     OK       0             114.35662 0.27746401        Serpine2
+Dock10       OK       0              78.51491 0.19052036          Dock10
+Irs1         OK       0              43.29154 0.09378677            Irs1
+Mff          OK       0              37.67718 0.09138817             Mff
+Pid1         OK       0             161.54835 0.38962936            Pid1
+Sp110        OK       0              48.28951 0.11715096           Sp110
+Itm2c        OK       0              64.94265 0.15757528           Itm2c
+Psmd1        OK       0              58.30290 0.14145610           Psmd1
+Ncl          OK       0             180.09986 0.43686121             Ncl
+Ptma         OK       0             275.55220 0.66779115            Ptma
+Pde6d        OK       0              55.65936 0.13504126           Pde6d
+Eif4e2       OK       0              60.82152 0.14756716          Eif4e2
+Dgkd         OK       0              66.53048 0.16142814            Dgkd
+         q_value
+Mrpl15         0
+Tcea1          0
+Rrs1           0
+Sgk3           0
+Snhg6          0
+Ppp1r42        0
+Cops5          0
+Tram1          0
+Terf1          0
+Rpl7           0
+Ube2w          0
+Eloc           0
+Tmem70         0
+Mcm3           0
+Ogfrl1         0
+Smap1          0
+Ptp4a1         0
+Prim2          0
+Bag2           0
+Imp4           0
+Ptpn18         0
+Hs6st1         0
+Uggt1          0
+Neurl3         0
+Arid5a         0
+Cox5b          0
+Mrpl30         0
+Eif5b          0
+Aff3           0
+Rpl31          0
+Map4k4         0
+Il1r2          0
+Il1rl1         0
+Il18rap        0
+Mrps9          0
+Fhl2           0
+Tex30          0
+Col3a1         0
+Wdr75          0
+Slc40a1        0
+Cavin2         0
+Asnsd1         0
+Stk17b         0
+Pgap1          0
+Ankrd44        0
+Hspd1          0
+Hspe1          0
+Sgo2a          0
+Bzw1           0
+Ppil3          0
+Orc2           0
+Ndufb3         0
+Casp8          0
+Gm973          0
+Sumo1          0
+Nop58          0
+Wdr12          0
+Raph1          0
+Pard3b         0
+Gm20342        0
+Ndufs1         0
+Eef1b2         0
+Adam23         0
+Fastkd2        0
+Klf7           0
+Idh1           0
+Acadl          0
+Ikzf2          0
+Bard1          0
+Atic           0
+Fn1            0
+Pecr           0
+Xrcc5          0
+Rpl37a         0
+Igfbp5         0
+Tns1           0
+Cxcr2          0
+Arpc2          0
+Aamp           0
+Slc11a1        0
+Cnot9          0
+Abcb6          0
+Stk16          0
+Tuba4a         0
+Farsb          0
+Wdfy1          0
+Mrpl44         0
+Serpine2       0
+Dock10         0
+Irs1           0
+Mff            0
+Pid1           0
+Sp110          0
+Itm2c          0
+Psmd1          0
+Ncl            0
+Ptma           0
+Pde6d          0
+Eif4e2         0
+Dgkd           0
