@@ -81,9 +81,6 @@ Analyses were performed in R using:
 
 Terminal Commands Used:
 
-# Run Monocle3 trajectory inference, trajectory-associated gene analysis,
-# statistical testing, and figure generation
-
 /opt/anaconda3/envs/monocle3_x86/bin/Rscript \
 ~/Downloads/runx1_monocle3_trajectory_and_gene_analysis_copy.R
 
