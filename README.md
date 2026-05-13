@@ -30,13 +30,12 @@ Input Data Files:
 
 Code Files:
 - runx1_monocle3_trajectory_and_gene_analysis copy.R
-  Main analysis workflow used for preprocessing, dimensionality reduction, Monocle3 trajectory inference, pseudotime ordering, and trajectory-associated gene analysis.
+  Main analysis workflow used for preprocessing, dimensionality reduction, Monocle3 trajectory inference, pseudotime ordering, trajectory-associated gene analysis, and figure generation.
 
 - runx1_monocle3_stats_analysis copy.R
-  Statistical analysis workflow used for pseudotime, cluster occupancy, and cell-type occupancy comparisons between WT and KO cells.
+  Statistical analysis workflow used for pseudotime, cluster occupancy, and cell-type occupancy
 
-- run_monocle_analysis copy.R
-  Supporting plotting and trajectory analysis script.
+  
 
 Output Files:
 - monocle_trajectory_genes_all.csv
