@@ -89,3 +89,5 @@ Terminal Commands Used:
 
 Analysis Summary:
 WT and KO cells were jointly embedded into a shared Monocle3 trajectory landscape. CD34-positive progenitor cells were used as the trajectory root population for pseudotime inference. Trajectory-associated genes were identified using Monocle3 graph_test() with Benjamini–Hochberg FDR correction. Additional statistical analyses included Wilcoxon rank-sum testing for pseudotime comparisons and chi-square testing for cell-type and cluster occupancy differences between WT and KO cells.
+
+GAI Usage Statement: I used GPT to refine the grammatical structure and wording of my individual analysis (Module 4) and improve the modularity of my code structure in the R files. However, all ideas were original to me.
