@@ -29,10 +29,10 @@ Input Data Files:
   Gene annotation metadata associated with the count matrix.
 
 Code Files:
-- runx1_monocle3_trajectory_and_gene_analysis copy.R
+- runx1_monocle3_trajectory_and_gene_analysis_copy.R
   Main analysis workflow used for preprocessing, dimensionality reduction, Monocle3 trajectory inference, pseudotime ordering, trajectory-associated gene analysis, statistical testing, and figure generation.
 
-- runx1_monocle3_stats_analysis copy.R
+- runx1_monocle3_stats_analysis_copy.R
   Supporting statistical workflow used for pseudotime, cluster occupancy, and cell-type occupancy comparisons between WT and KO cells.
   
 
@@ -78,6 +78,17 @@ Analyses were performed in R using:
 - SeuratWrappers
 - Matrix
 - ggplot2
+
+Terminal Commands Used:
+
+# Run Monocle3 trajectory inference, trajectory-associated gene analysis,
+# statistical testing, and figure generation
+
+/opt/anaconda3/envs/monocle3_x86/bin/Rscript \
+~/Downloads/runx1_monocle3_trajectory_and_gene_analysis_copy.R
+
+/opt/anaconda3/envs/monocle3_x86/bin/Rscript \
+~/Downloads/runx1_monocle3_stats_analysis_copy.R
 
 Analysis Summary:
 WT and KO cells were jointly embedded into a shared Monocle3 trajectory landscape. CD34-positive progenitor cells were used as the trajectory root population for pseudotime inference. Trajectory-associated genes were identified using Monocle3 graph_test() with Benjamini–Hochberg FDR correction. Additional statistical analyses included Wilcoxon rank-sum testing for pseudotime comparisons and chi-square testing for cell-type and cluster occupancy differences between WT and KO cells.
